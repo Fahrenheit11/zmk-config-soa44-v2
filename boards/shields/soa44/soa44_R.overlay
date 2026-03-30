@@ -25,7 +25,7 @@
         device = <&trackball>;
         input-processors = 
             <&zip_min_movement 1>,
-            <&zip_temp_layer 1 3000>;j
+            <&zip_temp_layer 1 3000>;
 
         scroller {
             layers = <5>;
