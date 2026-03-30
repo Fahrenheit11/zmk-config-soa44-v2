@@ -96,6 +96,14 @@
     };
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+        19 // J
+        20 // K
+        21 // l
+    >;
+};
+
 // Override led_strip to set red color for right side
 &led_strip {
     status = "okay";
