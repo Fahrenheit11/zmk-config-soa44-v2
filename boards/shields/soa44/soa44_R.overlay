@@ -24,6 +24,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = 
+            <&zip_xy_scaler 2 1>,
             <&zip_temp_layer 1 3000>;
 
         scroller {
@@ -90,11 +91,10 @@
         evt-type = <2>;  // INPUT_EV_REL
         x-input-code = <0>;  // INPUT_REL_X
         y-input-code = <1>;  // INPUT_REL_Y
-        cpi = <400>;
+        cpi = <200>;
         invert-y;
         force-awake;
         wakeup-source;
-        min-movement = <2>;
     };
 };
 
