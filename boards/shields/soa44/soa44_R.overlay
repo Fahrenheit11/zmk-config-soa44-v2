@@ -23,9 +23,9 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = 
-            <&zip_xy_scaler 2 1>,
-            <&zip_temp_layer 1 700>;
+        //input-processors = 
+          //  <&zip_xy_scaler 2 1>,
+         //   <&zip_temp_layer 1 700>;
 
         scroller {
             layers = <5>;
@@ -35,6 +35,15 @@
         };
     };
 };
+
+//&zip_temp_layer {
+//    excluded-positions = <
+//      19 // J
+//        20 // K
+//        21 // l
+//        12 // Ctrl
+//    >;
+//};
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -91,21 +100,13 @@
         evt-type = <2>;  // INPUT_EV_REL
         x-input-code = <0>;  // INPUT_REL_X
         y-input-code = <1>;  // INPUT_REL_Y
-        cpi = <200>;
+        cpi = <400>;
         invert-y;
         force-awake;
         wakeup-source;
     };
 };
 
-&zip_temp_layer {
-    excluded-positions = <
-        19 // J
-        20 // K
-        21 // l
-        12 // Ctrl
-    >;
-};
 
 // Override led_strip to set red color for right side
 &led_strip {
