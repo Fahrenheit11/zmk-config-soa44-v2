@@ -23,9 +23,9 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        //input-processors = 
-          //  <&zip_xy_scaler 2 1>,
-         //   <&zip_temp_layer 1 700>;
+        input-processors = 
+          //  <&zip_xy_scaler 4 1>,
+           <&zip_temp_layer 1 700>;
 
         scroller {
             layers = <5>;
@@ -36,14 +36,15 @@
     };
 };
 
-//&zip_temp_layer {
-//    excluded-positions = <
-//      19 // J
-//        20 // K
-//        21 // l
-//        12 // Ctrl
-//    >;
-//};
+&zip_temp_layer {
+    excluded-positions = <
+    19 // J
+        20 // K
+        21 // l
+       12 // Ctrl
+   >;
+ require-prior-idle-ms = <300>;
+};
 
 &pinctrl {
     spi0_default: spi0_default {
