@@ -43,11 +43,9 @@
     18// Copy
     30// Cut
     19 // J
-        20 // K
-        21 // l
-    31
-    32
-       12 // Ctrl
+    20 // K
+    21 // l
+    12 // Ctrl
    >;
  require-prior-idle-ms = <300>;
 };
