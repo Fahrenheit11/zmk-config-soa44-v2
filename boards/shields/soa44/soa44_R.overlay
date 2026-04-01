@@ -38,9 +38,15 @@
 
 &zip_temp_layer {
     excluded-positions = <
+    6 // Paste
+    7 // Paste
+    18// Copy
+    30// Cut
     19 // J
         20 // K
         21 // l
+    31
+    32
        12 // Ctrl
    >;
  require-prior-idle-ms = <300>;
