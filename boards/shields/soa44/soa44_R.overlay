@@ -46,6 +46,7 @@
     20 // K
     21 // l
     12 // Ctrl
+    24 // Shift
    >;
  require-prior-idle-ms = <300>;
 };
