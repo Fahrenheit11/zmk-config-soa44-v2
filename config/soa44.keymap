@@ -41,6 +41,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        lt_bl: lt_bl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BALANCED";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
