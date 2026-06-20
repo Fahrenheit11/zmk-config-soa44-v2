@@ -21,6 +21,11 @@
             bindings = <&mkp MB2>;
             key-positions = <20 21>;
         };
+
+        Free_scroll {
+            bindings = <&mo 5>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
@@ -58,7 +63,7 @@
         default {
             bindings = <
 &kp TAB           &lt 7 Q       &kp W         &kp E             &kp R        &kp T        &kp Y         &kp U             &kp I  &kp O      &kp P            &kp BACKSPACE
-&mt LCTRL ESCAPE  &kp A         &lt 5 S       &lt 6 D           &lt 1 F      &kp G        &kp H         &kp J             &kp K  &kp L      &lt 6 SEMICOLON  &kp ENTER
+&mt LCTRL ESCAPE  &kp A         &kp S         &lt 6 D           &lt 1 F      &kp G        &kp H         &kp J             &kp K  &kp L      &lt 6 SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT    &kp Z         &kp X         &kp C             &kp V        &kp B        &kp ASTERISK  &kp N             &kp M  &kp COMMA  &kp DOT          &kp SLASH
                   &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANGUAGE_2  &lt 4 EQUAL  &lt 2 MINUS  &lt 4 SPACE   &lt 3 LANGUAGE_1                    &lt 5 GRAVE
             >;
@@ -75,10 +80,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans   &trans   &trans  &trans  &trans   &trans    &trans          &kp HOME      &trans     &trans   &trans
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp END  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans          &trans        &trans     &trans   &trans
-        &kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans                                   &trans
+&trans  &kp EXCLAMATION  &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans
+&trans  &kp F1           &kp F2   &kp F3    &kp F4      &kp F5       &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT              &kp END    &trans
+&trans  &kp F6           &kp F7   &kp F8    &kp F9      &kp F10      &kp HOME   &trans          &trans                &trans                 &trans     &trans
+        &kp F11          &kp F12  &trans    &trans      &trans       &trans     &trans                                                       &trans
             >;
         };
 
@@ -93,10 +98,10 @@
 
         NUM {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp NUMBER_9  &kp N0        &trans        &trans  &trans  &trans  &trans  &trans
-        &trans        &trans        &trans        &trans        &trans        &trans        &trans                  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N7         &kp N8                &kp N9                 &kp N0     &trans
+&trans  &kp NUMBER_6     &kp N7        &kp N8        &kp NUMBER_9  &kp N0        &trans        &trans         &trans                &trans                 &trans     &trans
+        &trans           &trans        &trans        &trans        &trans        &trans        &trans                                                      &trans
             >;
         };
 
